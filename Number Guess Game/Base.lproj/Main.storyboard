@@ -16,26 +16,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tIB-uP-sXj">
-                                <rect key="frame" x="87" y="328" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zar_resim" translatesAutoresizingMaskIntoConstraints="NO" id="tIB-uP-sXj">
+                                <rect key="frame" x="67.5" y="307" width="279" height="189"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="279" id="PE1-7N-olW"/>
+                                    <constraint firstAttribute="height" constant="189" id="zda-yE-Anh"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hC-qk-CF4">
-                                <rect key="frame" x="174" y="594" width="67" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sayı Tahmin Et" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrH-he-zdS">
-                                <rect key="frame" x="83" y="211" width="249" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sayı Tahmin Et" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrH-he-zdS">
+                                <rect key="frame" x="82.5" y="211" width="249" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="textColor" systemColor="systemGreenColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xkX-U6-AG2">
+                                <rect key="frame" x="113.5" y="587" width="187" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="Iyf-DV-Onz"/>
+                                    <constraint firstAttribute="width" constant="187" id="bqr-Ig-VRv"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Oyuna Başla">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="bK6-Uu-bjf" kind="show" id="CN9-Tz-zBd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tIB-uP-sXj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IT2-rQ-okr"/>
+                            <constraint firstItem="tIB-uP-sXj" firstAttribute="top" secondItem="zrH-he-zdS" secondAttribute="bottom" constant="48" id="Ibi-k4-daH"/>
+                            <constraint firstItem="xkX-U6-AG2" firstAttribute="top" secondItem="tIB-uP-sXj" secondAttribute="bottom" constant="91" id="O06-X5-ZbE"/>
+                            <constraint firstItem="zrH-he-zdS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="123" id="rPd-Bt-39Q"/>
+                            <constraint firstItem="zrH-he-zdS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sWm-7I-SKu"/>
+                            <constraint firstItem="xkX-U6-AG2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zWH-ib-d1r"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Anasayfa" id="KHZ-v4-64q"/>
                 </viewController>
@@ -50,28 +69,124 @@
                     <view key="view" contentMode="scaleToFill" id="BV4-OV-Fjx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mutlu_resim" translatesAutoresizingMaskIntoConstraints="NO" id="PAt-vQ-KXb">
+                                <rect key="frame" x="70" y="201" width="274" height="165"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="165" id="6Xu-EQ-ZHa"/>
+                                    <constraint firstAttribute="width" constant="274" id="GdR-nR-n6g"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82U-kc-XOQ">
+                                <rect key="frame" x="130.5" y="589" width="153" height="44"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Tekrar Oyna">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                    <color key="baseForegroundColor" systemColor="systemMintColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="tekrarOyna:" destination="OeO-ST-B3A" eventType="touchUpInside" id="WA7-io-7Od"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kazandınız" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VI8-Jv-G93">
+                                <rect key="frame" x="125.5" y="427" width="163" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="wlX-ic-Iz5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PAt-vQ-KXb" firstAttribute="centerX" secondItem="BV4-OV-Fjx" secondAttribute="centerX" id="BH5-yy-6BJ"/>
+                            <constraint firstItem="82U-kc-XOQ" firstAttribute="top" secondItem="VI8-Jv-G93" secondAttribute="bottom" constant="120" id="FiN-gk-fvj"/>
+                            <constraint firstItem="VI8-Jv-G93" firstAttribute="top" secondItem="PAt-vQ-KXb" secondAttribute="bottom" constant="61" id="Nmg-ll-rii"/>
+                            <constraint firstItem="VI8-Jv-G93" firstAttribute="centerX" secondItem="BV4-OV-Fjx" secondAttribute="centerX" id="Ubp-xb-9p6"/>
+                            <constraint firstItem="82U-kc-XOQ" firstAttribute="centerX" secondItem="BV4-OV-Fjx" secondAttribute="centerX" id="Xta-kd-agc"/>
+                            <constraint firstItem="PAt-vQ-KXb" firstAttribute="top" secondItem="wlX-ic-Iz5" secondAttribute="top" constant="113" id="xrF-Rt-zul"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="rDe-hq-2hg"/>
+                    <connections>
+                        <outlet property="imageViewSonuc" destination="PAt-vQ-KXb" id="fvh-EO-uGQ"/>
+                        <outlet property="labelSonuc" destination="VI8-Jv-G93" id="9cQ-Yh-m08"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c75-ua-dTR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2060.8695652173915" y="-587.27678571428567"/>
+            <point key="canvasLocation" x="2245" y="-587"/>
         </scene>
-        <!--Tahmin EkraniVC-->
+        <!--Tahmin Ekranı-->
         <scene sceneID="2f9-6P-2Cg">
             <objects>
                 <viewController id="bK6-Uu-bjf" customClass="TahminEkraniVC" customModule="Number_Guess_Game" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I7o-9W-AnO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kalan Hak: 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="51T-bq-SeK">
+                                <rect key="frame" x="126.5" y="226" width="161" height="36"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" systemColor="systemPinkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arttır" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEr-zR-fdv">
+                                <rect key="frame" x="164" y="308" width="86" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" systemColor="systemIndigoColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Tahmin Giriniz..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wE5-K2-gV3">
+                                <rect key="frame" x="114" y="412" width="186" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="BCf-nq-Lxy"/>
+                                    <constraint firstAttribute="width" constant="186" id="KPe-Jq-M5e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t5c-9F-KFe">
+                                <rect key="frame" x="132.5" y="573" width="149" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="4gM-Mx-VJy"/>
+                                    <constraint firstAttribute="width" constant="149" id="Wtx-pk-529"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Tahmin Et">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                    <color key="baseForegroundColor" systemColor="systemPurpleColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="tahminEt:" destination="bK6-Uu-bjf" eventType="touchUpInside" id="mRO-NC-vog"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="cuw-l9-f4T"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wE5-K2-gV3" firstAttribute="top" secondItem="VEr-zR-fdv" secondAttribute="bottom" constant="56" id="A1Z-GD-xak"/>
+                            <constraint firstItem="wE5-K2-gV3" firstAttribute="leading" secondItem="cuw-l9-f4T" secondAttribute="leading" constant="114" id="EDm-5q-3Wt"/>
+                            <constraint firstItem="51T-bq-SeK" firstAttribute="centerX" secondItem="I7o-9W-AnO" secondAttribute="centerX" id="F47-jj-Rmx"/>
+                            <constraint firstItem="t5c-9F-KFe" firstAttribute="top" secondItem="wE5-K2-gV3" secondAttribute="bottom" constant="89" id="MZ2-Uq-zq3"/>
+                            <constraint firstItem="VEr-zR-fdv" firstAttribute="centerX" secondItem="I7o-9W-AnO" secondAttribute="centerX" id="UXV-tD-mxS"/>
+                            <constraint firstItem="51T-bq-SeK" firstAttribute="top" secondItem="cuw-l9-f4T" secondAttribute="top" constant="138" id="e7n-Z4-c5m"/>
+                            <constraint firstItem="VEr-zR-fdv" firstAttribute="top" secondItem="51T-bq-SeK" secondAttribute="bottom" constant="46" id="ez5-HP-HHe"/>
+                            <constraint firstItem="cuw-l9-f4T" firstAttribute="trailing" secondItem="wE5-K2-gV3" secondAttribute="trailing" constant="114" id="jUe-GP-ZWq"/>
+                            <constraint firstItem="t5c-9F-KFe" firstAttribute="centerX" secondItem="I7o-9W-AnO" secondAttribute="centerX" id="oUg-WX-uAV"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Tahmin Ekranı" id="bH6-FZ-Bc6"/>
+                    <connections>
+                        <outlet property="labelKalanHak" destination="51T-bq-SeK" id="86r-qa-9ve"/>
+                        <outlet property="labelYardim" destination="VEr-zR-fdv" id="66t-4q-MHC"/>
+                        <outlet property="textFieldGirdi" destination="wE5-K2-gV3" id="7qo-z2-XlD"/>
+                        <segue destination="OeO-ST-B3A" kind="show" identifier="tahminToSonuc" id="em7-zw-dTi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QG5-jW-dmA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1439.1304347826087" y="-587.27678571428567"/>
+            <point key="canvasLocation" x="1533" y="-587"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2V1-0q-cwo">
@@ -93,11 +208,34 @@
         </scene>
     </scenes>
     <resources>
+        <image name="mutlu_resim" width="48" height="48"/>
+        <image name="zar_resim" width="48" height="48"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
