@@ -16,6 +16,8 @@
 		17A6D7E22901566C007FAEDF /* Number_Guess_GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A6D7E12901566C007FAEDF /* Number_Guess_GameTests.swift */; };
 		17A6D7EC2901566C007FAEDF /* Number_Guess_GameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A6D7EB2901566C007FAEDF /* Number_Guess_GameUITests.swift */; };
 		17A6D7EE2901566C007FAEDF /* Number_Guess_GameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A6D7ED2901566C007FAEDF /* Number_Guess_GameUITestsLaunchTests.swift */; };
+		17A6D7FB29015783007FAEDF /* TahminEkraniVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A6D7FA29015783007FAEDF /* TahminEkraniVC.swift */; };
+		17A6D7FD290157A5007FAEDF /* SonucEkraniVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A6D7FC290157A5007FAEDF /* SonucEkraniVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		17A6D7E72901566C007FAEDF /* Number Guess GameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Number Guess GameUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17A6D7EB2901566C007FAEDF /* Number_Guess_GameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Number_Guess_GameUITests.swift; sourceTree = "<group>"; };
 		17A6D7ED2901566C007FAEDF /* Number_Guess_GameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Number_Guess_GameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		17A6D7FA29015783007FAEDF /* TahminEkraniVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TahminEkraniVC.swift; sourceTree = "<group>"; };
+		17A6D7FC290157A5007FAEDF /* SonucEkraniVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SonucEkraniVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				17A6D7D32901566C007FAEDF /* Assets.xcassets */,
 				17A6D7D52901566C007FAEDF /* LaunchScreen.storyboard */,
 				17A6D7D82901566C007FAEDF /* Info.plist */,
+				17A6D7FA29015783007FAEDF /* TahminEkraniVC.swift */,
+				17A6D7FC290157A5007FAEDF /* SonucEkraniVC.swift */,
 			);
 			path = "Number Guess Game";
 			sourceTree = "<group>";
@@ -258,9 +264,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17A6D7FD290157A5007FAEDF /* SonucEkraniVC.swift in Sources */,
 				17A6D7CF2901566B007FAEDF /* ViewController.swift in Sources */,
 				17A6D7CB2901566B007FAEDF /* AppDelegate.swift in Sources */,
 				17A6D7CD2901566B007FAEDF /* SceneDelegate.swift in Sources */,
+				17A6D7FB29015783007FAEDF /* TahminEkraniVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
